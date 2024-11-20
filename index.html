@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dawstin's ToDo List (F24)</title>
+    <link rel="stylesheet" href="css/list.css">
 </head>
+<style>
+.completed {
+    text-decoration: line-through;
+}
+label:hover {
+    background-color: #f0f0f0;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+    background-color: orange;
+}
+</style>
 <body>
+    <h1>ToDo List</h1>
+    <input type="text" id="myInput" placeholder="New task">
+    <button id="addButton">Add</button>
+    <button onclick="resetInput()" class="resetBtn">Reset Input</button>
+    <div id="myUL"></div>
     
+    <script src="list.js"></script>
 </body>
 </html>
